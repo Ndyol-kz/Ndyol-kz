@@ -33,6 +33,7 @@
         margin-bottom: 1em;
       }
     </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -76,6 +77,11 @@
             </li>
           </ul>
         </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/ndyol_/" class="fa fa-instagram" target="_blank"></a>
       </div>
     </nav>
     <div class="container text-center my-5">
@@ -85,20 +91,46 @@
           <h1 class="fw-light">Ndyol</h1>
           <h2 class="lead">ONLINE STORE</h2>
           <p class="lead text-muted"></p>
-          <a
+          <!--
             href="https://www.instagram.com/ndyol_/"
             target="_blank"
             class="btn btn-outline-success"
           >
             instagram
-          </a>
-          <a
+        -->
+          <!---
             href="https://wa.me/77714548400/"
             target="_blank"
             class="btn btn-outline-success"
-          >
-            whatsApp
+      
+            whatsApp-->
           </a>
+          <form action="action_page.php">
+            <div class="container">
+              <h1>Регистрация</h1>
+              <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"><b>Повторите пароль
+              </b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              <hr>
+          
+              <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#">Условия и конфиденциальность</a>.</p>
+              <button type="submit" class="registerbtn">Регистрация</button>
+            </div>
+          
+            <div class="container signin">
+              <p>У вас уже есть аккаунт? <a href="#">Войти</a>.</p>
+            </div>
+          </form>
+          
         </div>
       </div>
     </div>
